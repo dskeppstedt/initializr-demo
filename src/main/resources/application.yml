@@ -1,0 +1,25 @@
+initializr:
+  javaVersions:
+    - id: 11
+      default: false
+  languages:
+    - name: Java
+      id: java
+      default: true
+  packagings:
+    - name: Jar
+      id: jar
+      default: true
+  group-id:
+    value: org.acme
+    artifact-id:
+      value: my-app
+  types:
+    - name: Gradle Project
+      id: gradle-project
+      description: Generate a Gradle based project archive
+      tags:
+        build: gradle
+        format: project
+      default: false
+      action: /starter.zip
